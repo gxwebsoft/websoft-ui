@@ -1,4 +1,4 @@
-![nuxt-ui-saas-social-card](https://github.com/nuxt-ui-pro/saas/assets/739984/50bf4ddd-c4d5-47e5-a09e-0f699513dfb5)
+![nuxt-ui-saas-social-card](https://oss.wsdns.cn/20240619/1ea6e418195d4254b65e5db2d1a2a3e0.png?x-oss-process=image/resize,m_fixed,w_1680/quality,Q_100)
 
 # Nuxt UI Pro - SaaS template
 
