@@ -1,0 +1,139 @@
+title: Websoft UI - 网宿软件
+description: Nuxt UI Pro is a collection of premium Vue components built on top of Nuxt UI to create beautiful & responsive Nuxt applications in minutes.
+navigation: false
+hero:
+  title: 构建您的web应用
+  description: 基于Vue3+Nuxt构建的现代化web前端框架，支持私有化部署
+  links:
+    - label: 开始使用
+      to: '/signup'
+      size: xl
+      color: black
+      icon: i-heroicons-arrow-right-20-solid
+      trailing: true
+    - label: 代码仓库
+      icon: i-simple-icons-github
+      size: xl
+      color: gray
+      to: https://github.com/gxwebsoft/websoftui
+      target: _blank
+sections:
+  - title: 产品特色
+    description: 前后端分离、终端应用可灵活自定义开发、支持私有化部署
+    id: features
+    align: left
+    features:
+      - name: 易用
+        description: 注册账号后通过简单配置即可使用
+        icon: i-heroicons-cog
+      - name: 可靠
+        description: 前端采用蚂蚁金服的AntdVue框架，前后端分离稳定可靠
+        icon: i-heroicons-check
+      - name: 安全
+        description: 后端采用Java+Redis开发，接口通过签名才可访问，安全可靠
+        icon: i-heroicons-lock-closed
+    links:
+      - label: Explore components
+        to: /pro/components
+        color: gray
+        icon: i-heroicons-arrow-right-20-solid
+        trailing: true
+        size: md
+        class: ml-8
+  - title: 产品性能
+    description: 基于现代web技术及云计算优势SaaS网站平台无需编写代码即可使用
+    align: right
+    features:
+      - name: 体验良好
+        description: 基于vue3开发，使用体验很丝滑，响应速度快
+        icon: i-heroicons-rocket-launch
+      - name: 价格美丽
+        description: 价格实惠，助力中小微型企业打造企业信息化服务
+        icon: i-heroicons-currency-dollar
+      - name: 扩展性强
+        description: 有开发成立的企业可以下载源代码修改为自己喜欢的风格及功能独立部署
+        icon: i-heroicons-chart-bar
+    links:
+      - label: Learn more
+        to: /pro/guide/content
+        color: gray
+        icon: i-heroicons-arrow-right-20-solid
+        trailing: true
+        size: md
+        class: ml-8
+features:
+  title: 为什么选择我们的产品？
+  description: 拥有10年以上开发经验、采用目前最流行的技术栈开发、拥有自研的系统。
+  items:
+    - title: Easy to use
+      description: Id laborum laboris duis nostrud excepteur ut velit nulla magna Lorem proident non.
+      icon: i-heroicons-cog
+    - title: Reliable
+      description: Magna Lorem ex cillum fugiat ad enim aute irure sit duis minim.
+      icon: i-heroicons-check
+    - title: Secure
+      description: Proident nostrud excepteur sint ut culpa consectetur aute adipisicing non anim ullamco.
+      icon: i-heroicons-lock-closed
+    - title: Fast
+      description: Qui reprehenderit nostrud dolore nisi ad fugiat labore eiusmod sint aliquip nisi voluptate.
+      icon: i-heroicons-rocket-launch
+    - title: Affordable
+      description: Reprehenderit fugiat elit in do ipsum ut pariatur.
+      icon: i-heroicons-currency-dollar
+    - title: Scalable
+      description: Lorem deserunt et eiusmod. Ea in consectetur minim officia ullamco enim deserunt est.
+      icon: i-heroicons-chart-bar
+testimonials:
+  headline: 客户评价
+  title: 客户对我们的评价
+  items:
+    - quote: Nostrud tempor sunt fugiat. Dolor in sint dolore labore non occaecat adipisicing Lorem labore ullamco enim excepteur. In fugiat Lorem sit velit id veniam esse eiusmod non ea voluptate cupidatat reprehenderit ullamco dolore. Mollit laborum occaecat aliquip.
+      author:
+        name: Rose Roberson
+        description: CEO at Company
+        avatar:
+          src: https://i.pravatar.cc/120?img=1
+          loading: lazy
+    - quote: Eiusmod dolor aute ut nulla pariatur officia consequat aute amet exercitation.
+      author:
+        name: Chace Rodgers
+        description: CEO at Company
+        avatar:
+          src: https://i.pravatar.cc/120?img=7
+          loading: lazy
+    - quote: Id duis velit enim officia ad nisi incididunt magna ex dolor minim deserunt dolor. Esse incididunt cillum nostrud esse do quis amet labore amet nulla eiusmod amet nulla Lorem. Incididunt ex voluptate irure officia laboris ea proident est qui.
+      author:
+        name: Cornelius Sheppard
+        description: CEO at Company
+        avatar:
+          src: https://i.pravatar.cc/120?img=3
+          loading: lazy
+    - quote: Velit consectetur in adipisicing culpa eiusmod commodo eu ex dolore. Officia irure nisi dolor dolore velit fugiat. Aliqua sint aliqua aute elit eu sunt.
+      author:
+        name: Destinee Woods
+        description: CEO at Company
+        avatar:
+          src: https://i.pravatar.cc/120?img=5
+          loading: lazy
+    - quote: Proident quis deserunt qui ex exercitation veniam id Lorem est cupidatat ipsum irure aliquip ad.
+      author:
+        name: Kaleb Mccormick
+        description: CEO at Company
+        avatar:
+          src: https://i.pravatar.cc/120?img=8
+          loading: lazy
+    - quote: Magna officia quis ea ea in officia non voluptate ipsum culpa do labore sunt. Aute est dolore commodo sint officia ad laboris dolor magna aliquip exercitation tempor commodo.
+      author:
+        name: Jazmin Mccall
+        description: CEO at Company
+        avatar:
+          src: https://i.pravatar.cc/120?img=9
+          loading: lazy
+cta:
+  title: 开始使用
+  description: 感谢您的支持，成为我们的客户为您提供服务
+  links:
+    - label: 立即购买
+      size: xl
+      color: black
+      to: /pricing
