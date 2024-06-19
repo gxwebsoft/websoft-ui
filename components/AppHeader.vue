@@ -1,28 +1,51 @@
 <script setup lang="ts">
-const {data: info} = useFetch('https://modules.gxwebsoft.com/api/cms/website/getSiteInfo')
-import type { NavItem } from '@nuxt/content/dist/runtime/types'
+import type {Navigation} from "~/api/cms/navigation/model";
+import type {ApiResult} from "~/api";
+import type {Website} from "~/api/cms/website/model";
+const tenantId = '10123';
 
-const navigation = inject<Ref<NavItem[]>>('navigation', ref([]))
-console.log(info);
-const links = [{
-  label: '文档',
-  to: '/docs'
-}, {
-  label: '产品',
-  to: '/product'
-}, {
-  label: '价格',
-  to: '/pricing'
-}]
+// 请求数据
+const { data: website } = await useFetch<ApiResult<Website>>('https://modules.gxwebsoft.com/api/cms/website/getSiteInfo',
+    {
+      headers: {
+      tenantId: '10123'
+    }
+})
+
+// 赋值
+const info = website.value.data
+
+// 顶部导航条
+const topNav = ref<Navigation[]>()
+// 底部导航条
+const bottomNav = ref<Navigation[]>()
+
+const reload = () => {
+  if(info){
+    topNav.value = info?.navigations.filter(d => d.position == 1).map((item) => {
+      return {
+        label: item.title,
+        to: item.path
+      }
+    });
+    bottomNav.value = info.navigations.filter(d => d.position == 2).map((item) => {
+      return {
+        label: item.title,
+        to: item.path
+      }
+    });
+  }
+}
+reload()
 </script>
 
 <template>
-  <UHeader :links="links">
+  <UHeader :links="topNav">
     <template #logo>
       <NuxtImg src="https://oss.wsdns.cn/20240618/2fbe76024cdc47f5b1057dea577557a2.svg" width="42" />
       <div class="flex justify-between flex-row">
-        <span class="text-2xl">websoft</span>
-        <span class="text-orange-500 text-2xl font-bold" style="font-family: 'Arial',serif">UI</span>
+        <span class="text-2xl font-sans">{{ info.websiteName || 'websoft' }}</span>
+        <span class="text-orange-500 text-2xl font-black" style="font-family: 'Arial',serif">UI</span>
       </div>
     </template>
 
@@ -49,7 +72,7 @@ const links = [{
 
     <template #panel>
       <UNavigationTree
-        :links="mapContentNavigation(navigation)"
+        :links="mapContentNavigation(topNav)"
         default-open
       />
     </template>

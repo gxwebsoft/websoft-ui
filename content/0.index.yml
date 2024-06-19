@@ -6,7 +6,7 @@ hero:
   description: 基于Vue3+Nuxt构建的现代化web前端框架，支持私有化部署
   links:
     - label: 开始使用
-      to: '/signup'
+      to: '/docs'
       size: xl
       color: black
       icon: i-heroicons-arrow-right-20-solid
@@ -15,7 +15,7 @@ hero:
       icon: i-simple-icons-github
       size: xl
       color: gray
-      to: https://github.com/gxwebsoft/websoftui
+      to: https://github.com/gxwebsoft/websoft-ui
       target: _blank
 sections:
   - title: 产品特色
@@ -84,7 +84,7 @@ features:
       description: Lorem deserunt et eiusmod. Ea in consectetur minim officia ullamco enim deserunt est.
       icon: i-heroicons-chart-bar
 testimonials:
-  headline: 客户评价
+  headline:
   title: 客户对我们的评价
   items:
     - quote: Nostrud tempor sunt fugiat. Dolor in sint dolore labore non occaecat adipisicing Lorem labore ullamco enim excepteur. In fugiat Lorem sit velit id veniam esse eiusmod non ea voluptate cupidatat reprehenderit ullamco dolore. Mollit laborum occaecat aliquip.

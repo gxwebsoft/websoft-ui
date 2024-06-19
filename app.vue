@@ -1,10 +1,7 @@
 <script setup lang="ts">
 const colorMode = useColorMode()
-
 const color = computed(() => colorMode.value === 'dark' ? '#111827' : 'white')
-
 const route = useRoute()
-
 useHead({
   meta: [
     { charset: 'utf-8' },
@@ -23,10 +20,11 @@ useHead({
     }
   ]
 })
-
 useSeoMeta({
-  titleTemplate: '%s - 网宿软件'
+  titleTemplate: '%s - ' + '网宿软件'
 })
+
+
 </script>
 
 <template>
