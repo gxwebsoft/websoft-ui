@@ -1,22 +1,21 @@
 ![nuxt-ui-saas-social-card](https://oss.wsdns.cn/20240619/1ea6e418195d4254b65e5db2d1a2a3e0.png?x-oss-process=image/resize,m_fixed,w_1680/quality,Q_100)
 
-# Nuxt UI Pro - SaaS template
+# Websoft UI - template
 
-[![Nuxt UI Pro](https://img.shields.io/badge/Made%20with-Nuxt%20UI%20Pro-00DC82?logo=nuxt.js&labelColor=020420)](https://ui.nuxt.com/pro)
+[![Websoft UI](https://img.shields.io/badge/Made%20with-Websoft%20UI%20-00DC82?logo=nuxt.js&labelColor=020420)](https://ui.nuxt.com/pro)
 
-- [Live demo](https://saas-template.nuxt.dev/)
-- [Play on Stackblitz](https://stackblitz.com/github/nuxt-ui-pro/saas)
-- [Documentation](https://ui.nuxt.com/pro/getting-started)
+- [演示](https://ui.gxwebsoft.com)
+- [文档](https://ui.gxwebsoft.com/docs/getting-started)
 
-## Quick Start
+![输入图片说明](https://oss.wsdns.cn/20240327/f1175cc5aae741d3af05484747270bd5.jpeg?x-oss-process=image/resize,m_fixed,w_300/quality,Q_90)
+
+## 快速上手
 
 ```bash [Terminal]
-npx nuxi init -t github:nuxt-ui-pro/saas
+git clone https://github.com/gxwebsoft/websoft-ui.git
 ```
 
-## Setup
-
-Make sure to install the dependencies:
+## 安装依赖
 
 ```bash
 # npm
@@ -32,9 +31,9 @@ yarn install
 bun install
 ```
 
-## Development Server
+## 运行项目
 
-Start the development server on `http://localhost:3000`:
+运行成功后访问 `http://localhost:3000`:
 
 ```bash
 # npm
@@ -50,9 +49,9 @@ yarn dev
 bun run dev
 ```
 
-## Production
+## 打包部署
 
-Build the application for production:
+打包部署到生产环境:
 
 ```bash
 # npm
@@ -67,57 +66,3 @@ yarn build
 # bun
 bun run build
 ```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm run preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
-
-## Nuxt Studio integration
-
-Add `@nuxthq/studio` dependency to your package.json:
-
-```bash
-# npm
-npm install --save-dev @nuxthq/studio
-
-# pnpm
-pnpm add -D @nuxthq/studio
-
-# yarn
-yarn add -D @nuxthq/studio
-
-# bun
-bun add -d @nuxthq/studio
-```
-
-Add this module to your `nuxt.config.ts`:
-
-```ts
-export default defineNuxtConfig({
-  ...
-  modules: [
-    ...
-    '@nuxthq/studio'
-  ]
-})
-```
-
-Read more on [Nuxt Studio docs](https://nuxt.studio/docs/projects/setup).
-
-## Renovate integration
-
-Install [Renovate GitHub app](https://github.com/apps/renovate/installations/select_target) on your repository and you are good to go.
